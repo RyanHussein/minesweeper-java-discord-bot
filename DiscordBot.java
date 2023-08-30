@@ -8,7 +8,7 @@ public class DiscordBot {
 
     public static void main(String[] args) throws LoginException, InterruptedException {
 
-        JDA bot = JDABuilder.createDefault("MTEyOTc5ODM1OTM4MTcwODk4Mg.GwhVjp.3eqkGRDCZMaMu4kb9JA6FiAmcwoyDeJbybTuXs")
+        JDA bot = JDABuilder.createDefault("token")
                 .setActivity(Activity.playing("Minesweeper"))
                 .addEventListeners(new BotCommands())
                 .build().awaitReady();
